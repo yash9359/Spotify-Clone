@@ -342,3 +342,86 @@ nav {
   scrollbar-width: thin;
   scrollbar-color: #444 #111;
 }
+
+/* Player */
+
+.player-bar{
+    width: 100%;
+    height: 5rem;
+    margin-top:0.5rem ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+.music-controller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.player{
+    display: flex;
+    align-items: center;
+   
+}
+.player-btns{
+    font-size: 1.1rem;
+    margin: 0.4rem 1rem;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.player-btns:hover{
+    transform: scale(1.05);
+    color:rgb(255, 255, 255) ;
+    font-weight: 600;
+}
+#play{
+    font-size: 2rem;
+}
+
+#progressBar{
+    appearance: none;
+    width: 600px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* slider ke liye */
+input[type = 'range']::-webkit-slider-thumb{
+
+    /* naya use ke liye puarna hatana hoga style jo default hota hai */
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    
+
+}
+.now-bar{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 260px;         
+    flex-shrink: 0;       
+}
+.img-title-info,
+.img-des-info{
+    margin-left: 0.5rem;
+    max-width: 160px;     
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.player-bar img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 10px;
+    padding: 0.3rem;
+    flex-shrink: 0;       
+}
