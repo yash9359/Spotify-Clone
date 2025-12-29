@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/Spotify_Primary_Logo_RGB_Green.png">
+</head>
+
+<body>
+    <nav>
+        <div class="left-half">
+            <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+            <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="search-bar">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" class="input-box" placeholder="What do  you want to play ?" />
+                <div class="browse"><i class="fa-solid fa-folder-open"></i></div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="right-half-p1">
+                <p class="nav-text">Premium</p>
+                <p class="nav-text">Support</p>
+                <p class="nav-text">Download</p>
+            </div>
+            <div class="right-half-p2">
+                <div class="nav-text Install">
+                    <i class="fa-sharp fa-regular fa-circle-down"></i>
+                    <span>Install App</span>
+                </div>
+                <div class="sign-up nav-text">Sign up</div>
+                <button class="login-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main --->
+
+    <div class="main">
+        <!-- main-left part-->
+        <div class="main-left-part">
+            <div class="library">
+                <p>Your Library</p>
+                <div>+</div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h4>Createyour first Playlist</h4>
+                    <p>It's easy we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+
+                <div class="box">
+                    <h4>Let's find some podcast to follow</h4>
+                    <p>We'll keep you updated on new updates</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- main-right part-->
+        <div class="main-right-part">
+            <div class="music-section">
+                <h2>Popular songs</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/1.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="1" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Agar Tum Saath Ho</div>
+                        <div class="img-description">
+                            Song by Alka Yagnik and Arijit Singh
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/2.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="2" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Gehra Hua</div>
+                        <div class="img-description">
+                           Dhurandhar  by Irshad Kamil, Arijit Singh
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/3.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="3" class=" playmusic  fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title"> Salamat</div>
+                        <div class="img-description">
+                            by Amaal Mallik, Arijit Singh
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/4.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="4" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Sanam Re</div>
+                        <div class="img-description">
+                            by Mithoon, Arijit Singh
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/5.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="5" class=" playmusic  fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title"> Sawan Aaya Hai
+</div>
+                        <div class="img-description">
+                            by Tony Kakkar, Mithoon, Arijit Singh
+
+
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/6.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="6" class=" playmusic  fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Soch Na Sake</div>
+                        <div class="img-description">
+                            by Arijit Singh
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="music-section">
+                <h2>Trending songs</h2>
+                <div class="songs">
+
+
+
+                    <div class="music-card">
+                        <img src="images/7.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="7" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Raabta</div>
+                        <div class="img-description">
+                            Agent Vinod  by Pritam, Arijit Singh
+
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/8.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="8" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Brown Rang</div>
+                        <div class="img-description">
+                            International Villager  by Yo Yo Honey Singh
+
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/9.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="9" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Kaise Hua</div>
+                        <div class="img-description">
+                            Kabir Singh  by Vishal Mishra
+                        </div>
+                    </div>
+
+
+
+                    <div class="music-card">
+                        <img src="images/10.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="10" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Desi Kalakaar</div>
+                        <div class="img-description">
+                            Desi Kalakaar  by Yo Yo Honey Singh
+
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/11.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="11" class=" playmusic  fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Tu Hai Ki Nahi
+</div>
+                        <div class="img-description">
+                            Roy  by Ankit Tiwari
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/12.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="12" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Pal Pal Dil Ke Paas</div>
+                        <div class="img-description">
+                           by Kishore Kumar
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="music-section">
+
+                <h2>Top songs</h2>
+                <div class="songs">
+
+
+
+                    <div class="music-card">
+                        <img src="images/13.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="13" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Khuda Jaane</div>
+                        <div class="img-description">
+                            by Vishal & Shekhar, KK, Shilpa Rao
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/14.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="14" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Tu Hi Meri Shab Hai </div>
+                        <div class="img-description">
+                            by KK, Pritam
+
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/15.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="15" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Tum Hi Ho</div>
+                        <div class="img-description">
+                           Aashiqui 2  by Mithoon, Arijit Singh
+
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/16.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="16" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Chahun Main Ya Naa</div>
+                        <div class="img-description">
+                           Aashiqui 2  by Arijit Singh, Palak Muchhal
+
+                        </div>
+                    </div>
+
+                    <div class="music-card">
+                        <img src="images/17.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="17" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Ajab Si</div>
+                        <div class="img-description">
+                            Om Shanti Om  by Vishal & Shekhar, KK
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/17.jpg" alt="" />
+                        <div class="music-play-btn">
+                            <i id="18" class=" playmusic fa-sharp fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="img-title">Main Agar Kahoon</div>
+                        <div class="img-description">
+                          Om Shanti Om  by Vishal & Shekhar, Sonu Nigam, Shreya Ghoshal
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- Player -->
+
+    <div class="player-bar">
+        <div class="now-bar">
+            <img src="images/1.jpg" alt=""  class="now-img"/>
+            <div>
+                <div class="img-title-info">Agar Tum Saath Ho</div>
+                <div class="img-des-info">Song by Alka Yagnik and Arijit Singh
+                </div>
+
+            </div>
+        </div>
+        <div class="music-controller">
+            <div class="player">
+                <div><i id="shuffle" class="player-btns fa-solid fa-shuffle"></i></div>
+                <div><i id="backward" class="player-btns fa-solid fa-backward-step"></i></div>
+                <div>
+                    <i id="play" class="player-btns fa-solid fa-circle-play"></i>
+                </div>
+                <div>
+                    <i id="forward" class="player-btns fa-solid fa-forward-step"></i>
+                </div>
+                <div>
+                    <i id="repeat" class="player-btns fa-solid fa-repeat"></i>
+                </div>
+            </div>
+
+            <!-- type range se progress baar aa jata hai -->
+            <div>
+                <input type="range" id="progressBar" value="0" />
+            </div>
+        </div>
+        <!-- empty div for space -->
+        <div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
