@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // 👉 DIFFERENT SONG CLICKED
+            
             makeAllplay();
             currentSong = songId;
 
@@ -206,4 +206,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
+
 
