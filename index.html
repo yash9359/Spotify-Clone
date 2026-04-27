@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-64.png">
+</head>
+
+<body>
+    <nav>
+        <div class="left-half">
+            <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+            <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="mobile-search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" class="input-box" placeholder="Search songs, artists..." />
+                    <div class="browse"><i class="fa-solid fa-folder-open"></i></div>
+                </div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="right-half-p1">
+                <p class="nav-text">Premium</p>
+                <p class="nav-text">Support</p>
+                <p class="nav-text">Download</p>
+            </div>
+            <div class="right-half-p2">
+                <div class="nav-text Install">
+                    <i class="fa-sharp fa-regular fa-circle-down"></i>
+                    <span>Install App</span>
+                </div>
+                <div class="sign-up nav-text">Sign up</div>
+                <button class="login-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main">
+        <div class="main-left-part">
+            <div class="library">
+                <p>Your Library</p>
+                <div>+</div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h4>Create your first Playlist</h4>
+                    <p>It's easy we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+
+                <div class="box">
+                    <h4>Let's find some podcast to follow</h4>
+                    <p>We'll keep you updated on new updates</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-right-part">
+            <div class="music-section">
+                <h2>Popular songs</h2>
+                <div id="popular-songs" class="songs">
+                    <div class="loading"><div class="spinner"></div> Loading songs...</div>
+                </div>
+            </div>
+
+            <div class="music-section">
+                <h2>Trending songs</h2>
+                <div id="trending-songs" class="songs">
+                    <div class="loading"><div class="spinner"></div> Loading songs...</div>
+                </div>
+            </div>
+
+            <div class="music-section">
+
+                <h2>Top songs</h2>
+                <div id="top-songs" class="songs">
+                    <div class="loading"><div class="spinner"></div> Loading songs...</div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="player-bar">
+        <div class="now-bar">
+            <div class="idle-player">
+                <div class="idle-vinyl">
+                    <div class="idle-eq">
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="idle-text">
+                    <div class="idle-title">Pick a song to vibe 🎧</div>
+                    <div class="idle-tip">Explore trending songs above ↑</div>
+                </div>
+            </div>
+            <img src="" alt="" class="now-img" style="display:none;"/>
+            <div class="now-info" style="display:none;">
+                <div class="img-title-info">No song playing</div>
+                <div class="img-des-info">Select a song to play</div>
+            </div>
+        </div>
+        <div class="music-controller">
+            <div class="player">
+                <div><i id="shuffle" class="player-btns fa-solid fa-shuffle"></i></div>
+                <div><i id="backward" class="player-btns fa-solid fa-backward-step"></i></div>
+                <div>
+                    <i id="play" class="player-btns fa-solid fa-circle-play"></i>
+                </div>
+                <div>
+                    <i id="forward" class="player-btns fa-solid fa-forward-step"></i>
+                </div>
+                <div>
+                    <i id="repeat" class="player-btns fa-solid fa-repeat"></i>
+                </div>
+            </div>
+            <div class="progress-container">
+                <span id="currentTime" class="time-display">0:00</span>
+                <input type="range" id="progressBar" value="0" />
+                <span id="totalTime" class="time-display">0:00</span>
+            </div>
+        </div>
+        <div class="volume-container">
+            <i id="volumeIcon" class="fa-solid fa-volume-high volume-icon"></i>
+            <input type="range" id="volumeBar" value="70" class="volume-slider" />
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<script src="animations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
